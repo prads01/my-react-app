@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Design+Code`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Complete courses about the best tools and design systems. Prototype and build apps with React and Swift. 60 hours of video content and resource materials. No coding experience required.`,
+    keywords: 'react course, react for designers, ios development, sketch app, swift app course, arkit 2, after effects, create sketch plugin',
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -30,5 +31,12 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: 'amlu7d1lwgrl',
+        accessToken: 'g-_cEPtAddSKnbEsrGphOqeALJ1Xkz5ZX2yB640oZiY'
+      },
+    }
+  ]
 }
